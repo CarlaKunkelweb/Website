@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "Handwriting";
+  src: url("fonts/Jellyka_Estrya_Handwriting.ttf") format("truetype"); }
+
+body, html {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+body {
+  background-color: #141414; }
+
+img {
+  width: 90vw;
+  height: auto;
+  margin-top: 5vh; }
+
+.nav-bar {
+  height: 30vh;
+  background-color: #2e2f30;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  text-align: center;
+  position: relative; }
+
+#home {
+  padding: 0vh 4vw 1vh 4vw;
+  font-family: "Handwriting", Arial;
+  font-size: 6vw;
+  cursor: pointer;
+  top: 0vh;
+  left: -1vw;
+  position: absolute;
+  color: white; }
+
+#home:hover {
+  -webkit-animation: home-anim 700ms forwards;
+  animation: home-anim 700ms forwards; }
+
+@-webkit-keyframes home-anim {
+  100% {
+    color: #c8c8c8; } }
+
+@keyframes home-anim {
+  100% {
+    color: #c8c8c8; } }
+
+.nav-btn {
+  padding: 0vh 4vw 1vh 4vw;
+  font-family: "Handwriting", Arial;
+  font-size: 6vw;
+  cursor: pointer;
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -0.2vh;
+  color: rgba(170, 170, 170, 0.95);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.nav-btn-animated {
+  color: white;
+  background-color: default; }
+
+.nav-btn-no-anim {
+  background-color: #e6e6e6; }
+
+.nav-btn:hover {
+  color: rgba(100, 100, 100, 0.95);
+  -webkit-animation: light 700ms forwards;
+  animation: light 700ms forwards; }
+
+@-webkit-keyframes light {
+  0% {
+    background-color: default; }
+  100% {
+    background-color: #e6e6e6; } }
+
+@keyframes light {
+  0% {
+    background-color: default; }
+  100% {
+    background-color: #e6e6e6; } }
+
+.nav-btn:hover .drop-menu {
+  display: block;
+  -webkit-animation: show-drop-menu 600ms forwards;
+  animation: show-drop-menu 600ms forwards; }
+
+@-webkit-keyframes show-drop-menu {
+  100% {
+    opacity: 1; } }
+
+@keyframes show-drop-menu {
+  100% {
+    opacity: 1; } }
+
+.bar {
+  width: 120%;
+  height: 0.3vh;
+  background-color: grey;
+  margin-top: -1.9vh;
+  margin-bottom: 0.2vh; }
+
+.body-div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.no-display {
+  display: none; }
+
+.drop-menu {
+  position: absolute;
+  background-color: #e6e6e6;
+  height: 32vh;
+  width: 100%;
+  bottom: -32vh;
+  left: 0;
+  display: none;
+  opacity: 0;
+  cursor: default; }
+
+.drop-menu-p {
+  font-size: 8vh;
+  text-align: left;
+  padding-left: 0.7vw;
+  margin: 0;
+  cursor: pointer;
+  width: 38%;
+  margin: 1vh 0 1vh 2vw; }
+
+.drop-menu-p:hover {
+  -webkit-animation: text-dark 500ms forwards;
+  animation: text-dark 500ms forwards; }
+
+@-webkit-keyframes text-dark {
+  100% {
+    color: #1e1e1e; } }
+
+@keyframes text-dark {
+  100% {
+    color: #1e1e1e; } }

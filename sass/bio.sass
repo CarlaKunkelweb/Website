@@ -1,0 +1,169 @@
+@font-face
+  font-family: "Handwriting"
+  src: url("fonts/Jellyka_Estrya_Handwriting.ttf") format("truetype")
+
+@font-face
+  font-family: "Champignon"
+  src: url("fonts/Champignon.ttf") format("truetype")
+
+*
+  user-select: none
+  cursor: default
+
+body
+  margin: 0
+  color: rgba(220, 220, 220, 0.9)
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  background-image: url("../images/background.jpg")
+  background-size: cover
+  position: center
+  background-repeat: no-repeat
+  @media screen and (max-width: 1000px)
+    flex-direction: column
+    height: 180vh
+
+.nav-home-button
+  position: fixed
+  left: 1.5vw
+  top: -3vh
+  font-family: "Handwriting"
+  font-size: 10em
+  cursor: pointer
+
+.background-box
+  position: absolute
+  left: 0
+  top: 0
+  width: 100vw
+  height: 100vh
+  @media screen and (max-width: 1000px)
+    height: 180vh
+  background-color: rgba(0, 0, 0, 0.5)
+  z-index: -1
+
+.sig-wrapper
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 50vw
+  height: 20vh
+  @media screen and (min-width: 1000px)
+    position: absolute
+    left: 0
+    bottom: 0
+  @media screen and (max-width: 1000px)
+      position: absolute
+      left: 20vw
+      top: 0
+  z-index: 1
+
+.sig
+  color: white
+  font-family: "Champignon"
+  font-size: 4.5em
+  padding: 0
+  position: absolute
+  width: 100%
+  margin-left: 2vw
+  z-index: 10
+  @media screen and (max-width: 1000px)
+    margin-left: 7vw
+
+.sig-2
+  color: rgba(230, 230, 230, 1)
+  font-family: times
+  font-size: 0.4em
+  margin-top: -3.5vh
+  margin-left: 1.5vw
+  @media screen and (max-width: 1000px)
+    margin-left: 5vw
+
+.profile-pic
+  background-image: url("../images/profile-pic.jpg")
+  background-size: cover
+  @media screen and (max-width: 1000px)
+    width: 50vw
+    height: 70vw
+    margin-top: 3vh
+  @media screen and (max-width: 1200px)
+    width: 14vw
+    height: 19vw
+    position: absolute
+    left: 5vw
+    top: 3vh
+  @media screen and (min-width: 1200px)
+    width: 12vw
+    height: 16vw
+    position: absolute
+    left: 5vw
+    top: 3vh
+
+.content-wrapper
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  background-color: rgba(0, 0, 0, 0.6)
+  @media screen and (max-width: 1000px)
+    margin-top: 20vh
+    width: 100vw
+    height: 160vh
+  @media screen and (min-width: 1000px)
+    height: 100vh
+    width: 40vw
+    position: absolute
+    right: 15vw
+
+.content-title
+  font-size: 5.8vh
+  @media screen and (min-width: 1000px)
+    position: absolute
+    text-align: left
+    width: 100%
+    left: 20vw
+    top: 25vh
+  @media screen and (max-width: 1000px)
+    margin-top: 1vh
+
+.contact-title
+  margin-top: 3vh
+  font-size: 2.5em
+  text-align: left
+  width: 100%
+  margin-left: 10vw
+  @media screen and (max-width: 1400px)
+    font-size: 2em
+
+.content-text-wrapper
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 100%
+  @media screen and (max-width: 1000px)
+    margin-top: 10vh
+  @media screen and (min-width: 1000px)
+    margin-top: 25vh
+
+.contact-content
+  font-size: 1.5em
+  margin-top: 1.5vh
+  @media screen and (max-width: 1400px)
+    font-size: 1.1em
+
+.content
+  width: 30vw
+  margin-top: 4vh
+  text-align: center
+  font-size: 1em
+  font-style: serif
+  @media screen and (max-width: 1400px)
+    font-size: 0.75em
+  @media screen and (max-width: 1000px)
+    width: 80vw
+    font-size: 1em
+    margin-left: 0

@@ -1,0 +1,172 @@
+@font-face {
+  font-family: "Champignon";
+  src: url("fonts/Champignon.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Handwriting";
+  src: url("fonts/Jellyka_Estrya_Handwriting.ttf") format("truetype"); }
+
+body {
+  background-color: #f4f8ff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.nav-bar {
+  height: 15vh;
+  padding-right: 3vw; }
+
+.nav-btn {
+  float: right;
+  color: rgba(100, 100, 100, 0.6);
+  padding: 0vh 2vh 2vh 2vh;
+  cursor: pointer;
+  font-family: "Handwriting";
+  font-size: 9vh;
+  -webkit-animation: dark 250ms forwards;
+  animation: dark 250ms forwards; }
+
+.nav-btn:hover {
+  -webkit-animation: light 500ms forwards;
+  animation: light 500ms forwards; }
+
+@-webkit-keyframes light {
+  100% {
+    color: rgba(100, 100, 100, 0.85); } }
+
+@keyframes light {
+  100% {
+    color: rgba(100, 100, 100, 0.85); } }
+
+@-webkit-keyframes dark {
+  0% {
+    color: rgba(100, 100, 100, 0.85); }
+  100% {
+    color: rgba(100, 100, 100, 0.6); } }
+
+@keyframes dark {
+  0% {
+    color: rgba(100, 100, 100, 0.85); }
+  100% {
+    color: rgba(100, 100, 100, 0.6); } }
+
+#carla-title {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 10vh;
+  font-weight: 300;
+  font-family: "champignon";
+  cursor: default; }
+
+.landing-img {
+  background-image: url("../images/pic1.jpg");
+  background-size: cover;
+  width: 95vw;
+  height: 100vh;
+  margin: 1vh auto 5vh auto; }
+
+.container-1 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  width: 95vw;
+  margin: auto;
+  margin-bottom: 5vh;
+  padding: 0; }
+
+.img-1 {
+  background-image: url("../images/pic-4.jpg");
+  background-size: cover;
+  width: 46vw;
+  height: 70vh;
+  margin: 0vh auto 0vh 0; }
+
+.img-2 {
+  background-image: url("../images/pic-6.jpg");
+  background-size: cover;
+  width: 46vw;
+  height: 100vh;
+  margin: 0 0 auto auto; }
+
+.img-3 {
+  background-image: url("../images/pic-5.jpg");
+  background-size: cover;
+  width: 95vw;
+  height: 100vh;
+  margin: 1vh auto 5vh auto; }
+
+.bottom-bar {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.bottom-sym {
+  color: grey;
+  margin: 0 0.5vw 0 0.5vw;
+  cursor: pointer;
+  background-size: cover;
+  width: 2vw;
+  height: 2vw;
+  border-radius: 0.3vw;
+  opacity: 0.7;
+  -webkit-animation: hover-anim-light 250ms forwards;
+  animation: hover-anim-light 250ms forwards; }
+
+.bottom-sym:hover {
+  -webkit-animation: hover-anim-dark 500ms forwards;
+  animation: hover-anim-dark 500ms forwards; }
+
+@-webkit-keyframes hover-anim-dark {
+  100% {
+    opacity: 1; } }
+
+@keyframes hover-anim-dark {
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes hover-anim-light {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0.7; } }
+
+@keyframes hover-anim-light {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0.7; } }
+
+#fb-sym {
+  background-image: url("../images/fb-sym.jpg"); }
+
+#ig-sym {
+  background-image: url("../images/ig-sym.jpg"); }
+
+#tw-sym {
+  background-image: url("../images/tw-sym.jpg"); }
