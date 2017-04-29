@@ -7,7 +7,7 @@
   src: url("fonts/Jellyka_Estrya_Handwriting.ttf") format("truetype"); }
 
 body {
-  background-color: #f4f8ff;
+  background-color: #e8e8e8;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -31,26 +31,6 @@ body {
   -webkit-animation: light 500ms forwards;
   animation: light 500ms forwards; }
 
-@-webkit-keyframes light {
-  100% {
-    color: rgba(100, 100, 100, 0.85); } }
-
-@keyframes light {
-  100% {
-    color: rgba(100, 100, 100, 0.85); } }
-
-@-webkit-keyframes dark {
-  0% {
-    color: rgba(100, 100, 100, 0.85); }
-  100% {
-    color: rgba(100, 100, 100, 0.6); } }
-
-@keyframes dark {
-  0% {
-    color: rgba(100, 100, 100, 0.85); }
-  100% {
-    color: rgba(100, 100, 100, 0.6); } }
-
 #carla-title {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -67,7 +47,7 @@ body {
   cursor: default; }
 
 .landing-img {
-  background-image: url("../images/pic1.jpg");
+  background-image: url("../images/Landing/Duval-25.jpg");
   background-size: cover;
   width: 95vw;
   height: 100vh;
@@ -92,21 +72,22 @@ body {
   padding: 0; }
 
 .img-1 {
-  background-image: url("../images/pic-4.jpg");
+  background-image: url("../images/Landing/cmk-crop.jpg");
   background-size: cover;
   width: 46vw;
   height: 70vh;
-  margin: 0vh auto 0vh 0; }
+  margin: auto auto auto 0; }
 
 .img-2 {
-  background-image: url("../images/pic-6.jpg");
+  background-image: url("../images/Landing/Corkwood-11.jpg");
   background-size: cover;
+  background-position: center;
   width: 46vw;
-  height: 100vh;
+  height: 90vh;
   margin: 0 0 auto auto; }
 
 .img-3 {
-  background-image: url("../images/pic-5.jpg");
+  background-image: url("../images/Landing/Duval.jpg");
   background-size: cover;
   width: 95vw;
   height: 100vh;
@@ -161,6 +142,26 @@ body {
     opacity: 1; }
   100% {
     opacity: 0.7; } }
+
+@-webkit-keyframes light {
+  100% {
+    color: rgba(100, 100, 100, 0.85); } }
+
+@keyframes light {
+  100% {
+    color: rgba(100, 100, 100, 0.85); } }
+
+@-webkit-keyframes dark {
+  0% {
+    color: rgba(100, 100, 100, 0.85); }
+  100% {
+    color: rgba(100, 100, 100, 0.6); } }
+
+@keyframes dark {
+  0% {
+    color: rgba(100, 100, 100, 0.85); }
+  100% {
+    color: rgba(100, 100, 100, 0.6); } }
 
 #fb-sym {
   background-image: url("../images/fb-sym.jpg"); }
