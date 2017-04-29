@@ -93,7 +93,7 @@ body {
     .profile-pic {
       width: 50vw;
       height: 70vw;
-      margin-top: 3vh; } }
+      margin-top: 0vh; } }
   @media screen and (min-width: 1000px) and (max-width: 1200px) {
     .profile-pic {
       width: 14vw;
@@ -104,10 +104,8 @@ body {
   @media screen and (min-width: 1200px) {
     .profile-pic {
       width: 12vw;
-      height: 16vw;
-      position: absolute;
-      left: 5vw;
-      top: 3vh; } }
+      height: 15vw;
+      margin-top: 3vh; } }
 
 .content-wrapper {
   display: -webkit-flex;
@@ -140,10 +138,7 @@ body {
   font-size: 5.8vh; }
   @media screen and (min-width: 1000px) {
     .content-title {
-      position: absolute;
-      text-align: left;
-      left: 20vw;
-      top: 25vh; } }
+      display: none; } }
   @media screen and (max-width: 1000px) {
     .content-title {
       margin-top: 1vh; } }
@@ -174,10 +169,10 @@ body {
   width: 100vw; }
   @media screen and (max-width: 1000px) {
     .content-text-wrapper {
-      margin-top: 10vh; } }
+      margin-top: 1vh; } }
   @media screen and (min-width: 1000px) {
     .content-text-wrapper {
-      margin-top: 25vh; } }
+      margin-top: 1vh; } }
 
 .contact-content {
   font-size: 1.5em;
@@ -198,5 +193,5 @@ body {
   @media screen and (max-width: 1000px) {
     .content {
       width: 80vw;
-      font-size: 1em;
+      font-size: 1.4em;
       margin-left: 0; } }

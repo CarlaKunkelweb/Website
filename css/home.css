@@ -52,6 +52,10 @@ body {
   width: 95vw;
   height: 100vh;
   margin: 1vh auto 5vh auto; }
+  @media screen and (max-width: 1280px) {
+    .landing-img {
+      background-image: url("../images/Landing/Duval-25-m.jpg");
+      height: 70vw; } }
 
 .container-1 {
   display: -webkit-flex;
@@ -70,13 +74,23 @@ body {
   margin: auto;
   margin-bottom: 5vh;
   padding: 0; }
+  @media screen and (max-width: 1280px) {
+    .container-1 {
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .img-1 {
   background-image: url("../images/Landing/cmk-crop.jpg");
   background-size: cover;
-  width: 46vw;
   height: 70vh;
+  width: 46vw;
   margin: auto auto auto 0; }
+  @media screen and (max-width: 1280px) {
+    .img-1 {
+      background-image: url("../images/Landing/cmk-crop-m.jpg");
+      width: 95vw;
+      height: 70vw; } }
 
 .img-2 {
   background-image: url("../images/Landing/Corkwood-11.jpg");
@@ -85,6 +99,12 @@ body {
   width: 46vw;
   height: 90vh;
   margin: 0 0 auto auto; }
+  @media screen and (max-width: 1280px) {
+    .img-2 {
+      background-image: url("../images/Landing/Corkwood-11-m.jpg");
+      width: 95vw;
+      height: 70vw;
+      margin-top: 5vh; } }
 
 .img-3 {
   background-image: url("../images/Landing/Duval.jpg");
@@ -92,6 +112,11 @@ body {
   width: 95vw;
   height: 100vh;
   margin: 1vh auto 5vh auto; }
+  @media screen and (max-width: 1280px) {
+    .img-3 {
+      background-image: url("../images/Landing/Duval-m.jpg");
+      width: 95vw;
+      height: 70vw; } }
 
 .bottom-bar {
   display: -webkit-flex;
@@ -118,6 +143,11 @@ body {
   opacity: 0.7;
   -webkit-animation: hover-anim-light 250ms forwards;
   animation: hover-anim-light 250ms forwards; }
+  @media screen and (max-width: 1200px) {
+    .bottom-sym {
+      width: 10vw;
+      height: 10vw;
+      margin: 0 2vw 0 2vw; } }
 
 .bottom-sym:hover {
   -webkit-animation: hover-anim-dark 500ms forwards;
