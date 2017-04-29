@@ -31,7 +31,9 @@ body {
   background-image: url("../images/background.jpg");
   background-size: cover;
   position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  width: 100vw;
+  overflow-x: hidden; }
   @media screen and (max-width: 1000px) {
     body {
       -webkit-flex-direction: column;
@@ -59,45 +61,20 @@ body {
     .background-box {
       height: 180vh; } }
 
-.sig-wrapper {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 50vw;
-  height: 20vh;
-  z-index: 1; }
-  @media screen and (min-width: 1000px) {
-    .sig-wrapper {
-      position: absolute;
-      left: 0;
-      bottom: 0; } }
-  @media screen and (max-width: 1000px) {
-    .sig-wrapper {
-      position: absolute;
-      left: 20vw;
-      top: 0; } }
-
 .sig {
   color: white;
   font-family: "Champignon";
   font-size: 4.5em;
   padding: 0;
   position: absolute;
-  width: 100%;
-  margin-left: 2vw;
   z-index: 10; }
   @media screen and (max-width: 1000px) {
     .sig {
-      margin-left: 7vw; } }
+      top: 5vh; } }
+  @media screen and (min-width: 1000px) {
+    .sig {
+      left: 3vw;
+      bottom: 3vh; } }
 
 .sig-2 {
   color: #e6e6e6;
@@ -117,7 +94,7 @@ body {
       width: 50vw;
       height: 70vw;
       margin-top: 3vh; } }
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 1000px) and (max-width: 1200px) {
     .profile-pic {
       width: 14vw;
       height: 19vw;
@@ -159,12 +136,12 @@ body {
       right: 15vw; } }
 
 .content-title {
+  width: auto;
   font-size: 5.8vh; }
   @media screen and (min-width: 1000px) {
     .content-title {
       position: absolute;
       text-align: left;
-      width: 100%;
       left: 20vw;
       top: 25vh; } }
   @media screen and (max-width: 1000px) {
@@ -175,8 +152,8 @@ body {
   margin-top: 3vh;
   font-size: 2.5em;
   text-align: left;
-  width: 100%;
-  margin-left: 10vw; }
+  width: auto;
+  margin-left: 0; }
   @media screen and (max-width: 1400px) {
     .contact-title {
       font-size: 2em; } }
@@ -194,7 +171,7 @@ body {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 100%; }
+  width: 100vw; }
   @media screen and (max-width: 1000px) {
     .content-text-wrapper {
       margin-top: 10vh; } }
