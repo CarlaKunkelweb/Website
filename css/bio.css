@@ -12,6 +12,9 @@
   -ms-user-select: none;
   user-select: none;
   cursor: default; }
+  @media screen and (max-width: 1000px) {
+    * {
+      font-size: 0.9em; } }
 
 body {
   margin: 0;
