@@ -33,10 +33,12 @@ img {
   top: 0vh;
   left: -1vw;
   position: absolute;
-  color: white; }
+  color: white;
+  z-index: 100; }
   @media screen and (max-width: 1000px) {
     #home {
       font-size: 12em;
+      max-height: 10vh;
       top: -2vh; } }
   @media screen and (width: 1080px) and (height: 1920px) {
     #home {
@@ -48,7 +50,7 @@ img {
   animation: home-anim 700ms forwards; }
 
 .nav-bar {
-  height: 20vh;
+  height: 22.5vh;
   background-color: #2e2f30;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -135,6 +137,14 @@ img {
 
 .no-display {
   display: none; }
+
+@media screen and (max-width: 801px) {
+  .large {
+    display: none; } }
+
+@media screen and (min-width: 802px) {
+  .small {
+    display: none; } }
 
 @-webkit-keyframes text-dark {
   100% {

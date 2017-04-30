@@ -34,8 +34,10 @@ img
   left: -1vw
   position: absolute
   color: white
+  z-index: 100
   @media screen and (max-width: 1000px)
     font-size: 12em
+    max-height: 10vh
     top: -2vh
   @media screen and (width: 1080px) and (height: 1920px)
     font-size: 15em
@@ -46,7 +48,7 @@ img
 
 //navigation bar
 .nav-bar
-  height: 20vh
+  height: 22.5vh
   background-color: rgb(46, 47, 48)
   display: flex
   flex-direction: row
@@ -106,6 +108,14 @@ img
 
 .no-display
   display: none
+
+.large
+  @media screen and (max-width: 801px)
+    display: none
+
+.small
+  @media screen and (min-width: 802px)
+    display: none
 
 // .drop-menu
 //   position: absolute
