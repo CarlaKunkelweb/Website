@@ -47,7 +47,13 @@ body {
   top: -3vh;
   font-family: "Handwriting";
   font-size: 10em;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-animation: light 250ms forwards;
+  animation: light 250ms forwards; }
+
+.nav-home-button:hover {
+  -webkit-animation: dark 500ms forwards;
+  animation: dark 500ms forwards; }
 
 .background-box {
   position: absolute;
@@ -195,3 +201,23 @@ body {
       width: 80vw;
       font-size: 1.4em;
       margin-left: 0; } }
+
+@-webkit-keyframes light {
+  100% {
+    color: white; } }
+
+@keyframes light {
+  100% {
+    color: white; } }
+
+@-webkit-keyframes dark {
+  0% {
+    color: white; }
+  100% {
+    color: #b4b4b4; } }
+
+@keyframes dark {
+  0% {
+    color: white; }
+  100% {
+    color: #b4b4b4; } }
