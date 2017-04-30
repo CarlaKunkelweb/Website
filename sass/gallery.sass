@@ -2,6 +2,7 @@
   font-family: "Handwriting"
   src: url("fonts/Jellyka_Estrya_Handwriting.ttf") format("truetype")
 
+//generic tags
 body, html
   padding: 0
   margin: 0
@@ -12,11 +13,33 @@ body
 
 img
   width: 90vw
-  height: auto
+  max-height: 90vh
   margin-top: 5vh
 
+
+//home button
+#home
+  padding: 0vh 4vw 1vh 4vw
+  font-family: "Handwriting", Arial
+  font-size: 9em
+  cursor: pointer
+  top: 0vh
+  left: -1vw
+  position: absolute
+  color: white
+  @media screen and (max-width: 1000px)
+    font-size: 12em
+    top: -2vh
+  @media screen and (width: 1080px) and (height: 1920px)
+    font-size: 15em
+    top: -2vh
+
+#home:hover
+  animation: home-anim 700ms forwards
+
+//navigation bar
 .nav-bar
-  height: 30vh
+  height: 20vh
   background-color: rgb(46, 47, 48)
   display: flex
   flex-direction: row
@@ -25,28 +48,10 @@ img
   text-align: center
   position: relative
 
-#home
-  padding: 0vh 4vw 1vh 4vw
-  font-family: "Handwriting", Arial
-  font-size: 6vw
-  cursor: pointer
-  top: 0vh
-  left: -1vw
-  position: absolute
-  color: white
-
-#home:hover
-  animation: home-anim 700ms forwards
-
-@keyframes home-anim
-  100%
-    color: rgba(200, 200, 200, 1)
-
-
 .nav-btn
   padding: 0vh 4vw 1vh 4vw
   font-family: "Handwriting", Arial
-  font-size: 6vw
+  font-size: 6em
   cursor: pointer
   position: relative
   display: flex
@@ -56,6 +61,17 @@ img
   margin-bottom: -0.2vh
   color: rgba(170, 170, 170, 0.95)
   user-select: none
+  @media screen and (max-width: 1000px)
+    font-size: 10em
+  @media screen and (width: 1080px) and (height: 1920px)
+    font-size: 10em
+
+.bar
+  width: 120%
+  height: 0.3vh
+  background-color: grey
+  margin-top: -1.9vh
+  margin-bottom: 0.2vh
 
 .nav-btn-animated
   color: white
@@ -68,66 +84,60 @@ img
   color: rgba(100, 100, 100, 0.95)
   animation: light 700ms forwards
 
-@keyframes light
-  0%
-    background-color: default
+// .nav-btn:hover .drop-menu
+//   display: block
+//   animation: show-drop-menu 600ms forwards
 
-  100%
-
-    background-color: rgb(230, 230, 230)
-
-
-.nav-btn:hover .drop-menu
-  display: block
-  animation: show-drop-menu 600ms forwards
-
-@keyframes show-drop-menu
-  100%
-    opacity: 1
-
-
-.bar
-  width: 120%
-  height: 0.3vh
-  background-color: grey
-  margin-top: -1.9vh
-  margin-bottom: 0.2vh
-
+//body styling for use with javascript
 .body-div
   display: flex
   flex-direction: column
   justify-content: center
   align-items: center
 
-.modern, .industrial, .shabby, .mid, .art, .eclectic
-
 .no-display
   display: none
 
-.drop-menu
-  position: absolute
-  background-color: rgb(230, 230, 230)
-  height: 32vh
-  width: 100%
-  bottom: -32vh
-  left: 0
-  display: none
-  opacity: 0
-  cursor: default
+// .drop-menu
+//   position: absolute
+//   background-color: rgb(230, 230, 230)
+//   height: 32vh
+//   width: 100%
+//   bottom: -32vh
+//   left: 0
+//   display: none
+//   opacity: 0
+//   cursor: default
+//
+// .drop-menu-p
+//   font-size: 8vh
+//   text-align: left
+//   padding-left: 0.7vw
+//   margin: 0
+//   cursor: pointer
+//   background-color:default
+//   width: 38%
+//   margin: 1vh 0 1vh 2vw
+//
+// .drop-menu-p:hover
+//   animation: text-dark 500ms forwards
 
-.drop-menu-p
-  font-size: 8vh
-  text-align: left
-  padding-left: 0.7vw
-  margin: 0
-  cursor: pointer
-  background-color:default
-  width: 38%
-  margin: 1vh 0 1vh 2vw
 
-.drop-menu-p:hover
-  animation: text-dark 500ms forwards
-
+//keyframes
 @keyframes text-dark
   100%
     color: rgb(30, 30, 30)
+
+@keyframes home-anim
+  100%
+    color: rgba(200, 200, 200, 1)
+
+@keyframes show-drop-menu
+  100%
+    opacity: 1
+
+@keyframes light
+  0%
+    background-color: default
+  100%
+    background-color: rgb(230, 230, 230)
