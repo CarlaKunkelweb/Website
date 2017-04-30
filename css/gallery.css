@@ -14,9 +14,16 @@ body {
   background-color: #141414; }
 
 img {
-  width: 90vw;
+  width: 100%;
+  height: auto;
+  max-width: 45vw;
   max-height: 90vh;
-  margin-top: 5vh; }
+  margin: 2vh auto 2vh auto; }
+  @media screen and (max-width: 1000px) {
+    img {
+      max-width: 90vw;
+      max-height: 90vh;
+      margin: 2vh auto 0.5vh auto; } }
 
 #home {
   padding: 0vh 4vw 1vh 4vw;
@@ -112,15 +119,19 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100vw; }
 
 .no-display {
   display: none; }

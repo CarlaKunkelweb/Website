@@ -12,9 +12,16 @@ body
   background-color: rgb(20, 20, 20)
 
 img
-  width: 90vw
+  width: 100%
+  height: auto
+  max-width: 45vw
   max-height: 90vh
-  margin-top: 5vh
+  margin: 2vh auto 2vh auto
+  @media screen and (max-width: 1000px)
+    max-width: 90vw
+    max-height: 90vh
+    margin: 2vh auto 0.5vh auto
+
 
 
 //home button
@@ -91,9 +98,11 @@ img
 //body styling for use with javascript
 .body-div
   display: flex
-  flex-direction: column
+  flex-direction: row
   justify-content: center
   align-items: center
+  flex-wrap: wrap
+  width: 100vw
 
 .no-display
   display: none
