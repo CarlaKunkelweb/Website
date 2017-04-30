@@ -32,7 +32,10 @@ body
     flex-direction: column
     height: 180vh
   @media screen and (width: 750px) and (height: 1334px)
-    font-size: 170%
+    font-size: 140%
+  @media screen and (width: 1080px) and (height: 1920px)
+    font-size: 160%
+    height: 120vh
 
 .nav-home-button
   position: fixed
@@ -57,7 +60,9 @@ body
   z-index: -1
   @media screen and (max-width: 1000px)
     height: 180vh
-
+  @media screen and (width: 1080px) and (height: 1920px)
+    height: 120vh
+    width: 120vw
 //signature in bottom left for desktop/top for mobile
 .sig
   color: white
@@ -72,6 +77,9 @@ body
     position: absolute
     left: 3vw
     bottom: 3vh
+  @media screen and (width: 1080px) and (height: 1920px)
+    bottom: -17vh
+    font-size: 4em
 
 
 .sig-2
@@ -82,6 +90,8 @@ body
   margin-left: 1.5vw
   @media screen and (max-width: 1000px)
     margin-left: 5vw
+  @media screen and (width: 1080px) and (height: 1920px)
+    margin-top: -2.5vh
 
 .profile-pic
   background-image: url("../images/profile-pic.jpg")
@@ -100,6 +110,9 @@ body
     width: 12vw
     height: 15vw
     margin-top: 3vh
+  @media screen and (width: 1080px) and (height: 1920px)
+    width: 25vw
+    height: 40vw
 
 .content-wrapper
   display: flex
@@ -116,6 +129,10 @@ body
     width: 40vw
     position: absolute
     right: 15vw
+  @media screen and (width: 1080px) and (height: 1920px)
+    width: 50vw
+    right: 0
+    height: 120vh
 
 .content-title
   width: auto
@@ -144,6 +161,8 @@ body
     margin-top: 1vh
   @media screen and (min-width: 1000px)
     margin-top: 1vh
+  @media screen and (width: 1080px) and (height: 1920px)
+    margin-top: 20vh
 
 .contact-content
   font-size: 1.5em
@@ -163,7 +182,9 @@ body
     width: 80vw
     font-size: 1em
     margin-left: 0
-
+  @media screen and (width: 1080px) and (height: 1920px)
+    width: 40vw
+    font-size: 1.15em
 //animation keyframes
 @keyframes light
   100%
