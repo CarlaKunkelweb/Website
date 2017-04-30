@@ -14,7 +14,7 @@
   cursor: default; }
   @media screen and (max-width: 1000px) {
     * {
-      font-size: 0.9em; } }
+      font-size: 1.2em; } }
 
 body {
   margin: 0;
@@ -52,7 +52,8 @@ body {
   font-size: 10em;
   cursor: pointer;
   -webkit-animation: light 250ms forwards;
-  animation: light 250ms forwards; }
+  animation: light 250ms forwards;
+  z-index: 100; }
 
 .nav-home-button:hover {
   -webkit-animation: dark 500ms forwards;
