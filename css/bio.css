@@ -52,6 +52,12 @@ body {
       height: 180vh; } }
   @media screen and (min-width: 1001px) {
     body {
+      font-size: 80%; } }
+  @media screen and (min-width: 1200px) {
+    body {
+      font-size: 90%; } }
+  @media screen and (min-width: 1400px) {
+    body {
       font-size: 100%; } }
 
 p {
