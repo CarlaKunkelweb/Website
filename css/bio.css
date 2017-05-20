@@ -35,6 +35,12 @@ body {
   width: 100vw;
   overflow-x: hidden;
   font-size: 70%; }
+  @media screen and (min-height: 800px) {
+    body {
+      font-size: 85%; } }
+  @media screen and (min-height: 900px) {
+    body {
+      font-size: 100%; } }
   @media screen and (min-width: 360px) and (min-height: 640px) and (max-width: 400px) {
     body {
       font-size: 80%; } }
@@ -50,15 +56,6 @@ body {
       -ms-flex-direction: column;
       flex-direction: column;
       height: 180vh; } }
-  @media screen and (min-width: 1001px) {
-    body {
-      font-size: 80%; } }
-  @media screen and (min-width: 1200px) {
-    body {
-      font-size: 90%; } }
-  @media screen and (min-width: 1400px) {
-    body {
-      font-size: 100%; } }
 
 p {
   margin-bottom: 0.3vh; }
@@ -237,6 +234,11 @@ p {
 #p3 {
   clear: both; }
 
+#last-paragraph {
+  text-align: center;
+  font-size: 1.7em;
+  margin-top: 2vh; }
+
 #contact-container {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -253,7 +255,7 @@ p {
   clear: both; }
 
 #contact-title {
-  margin-top: 2vh;
+  margin-top: 0.5vh;
   font-size: 2.5em;
   text-align: left;
   width: auto;
