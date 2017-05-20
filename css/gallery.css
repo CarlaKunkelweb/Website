@@ -8,15 +8,20 @@ body, html {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; }
+  user-select: none;
+  overflow-x: hidden; }
 
 body {
-  background-color: #141414; }
+  background-color: #141414;
+  width: 97.5vw; }
+  @media screen and (max-width: 1000px) {
+    body {
+      width: 100vw; } }
 
 img {
   width: 100%;
   height: auto;
-  max-width: 45vw;
+  max-width: 48%;
   max-height: 90vh;
   margin: 2vh auto 2vh auto; }
   @media screen and (max-width: 1000px) {
@@ -86,6 +91,8 @@ img {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: -0.2vh;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
   color: rgba(170, 170, 170, 0.95);
   -webkit-user-select: none;
   -moz-user-select: none;
