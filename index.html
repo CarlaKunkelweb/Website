@@ -5,24 +5,43 @@
     <link rel="stylesheet" href="css/home.css">
   </head>
   <body>
-    <div class="nav-bar">
-      <div class="nav-btn" onclick="openAboutMe()">About Me</div>
-      <div class="nav-btn" onclick="galleryLink()">Gallery</div>
+
+  <div id="landing-img">
+
+    <div id="nav-bar">
+      <div class="nav-btn" id="nav-btn-aboutme" onclick="openAboutMe()">About Me</div>
+      <div class="nav-btn" id="nav-btn-gallery" onclick="galleryLink()">Gallery</div>
     </div>
 
     <span id="carla-title">Carla Kunkel</span>
+  </div>
 
-  <div class="landing-img">
-  </div>
-  <div class="container-1">
-    <div class="img-1">
+  <div class="section">
+
+    <div class="img" id="img-1">
+      <div class="img-overlay" onclick="galleryLink()"></div>
+      <span class="img-text">Gallery</span>
     </div>
-    <div class="img-2">
+
+    <div class="img" id="img-2">
+    </div>
+
+  </div>
+
+  <div class="img" id="img-3"></div>
+
+  <div class="section" id="section-bottom">
+    <div class="img" id="img-4"></div>
+    <div class="img" id="img-5">
+      <div class="img-overlay" onclick="openAboutMe()"></div>
+      <span class="img-text">About Me</span>
     </div>
   </div>
-  <div class="img-3">
+
+  <div class="img" id="img-6">
+
   </div>
-<!-- 
+<!--
   <div class="bottom-bar">
     <div class="bottom-sym" id="fb-sym">
     </div>
