@@ -1,0 +1,68 @@
+//Fonts
+@font-face
+  font-family: "Handwriting"
+  src: url("fonts/Jellyka_Estrya_Handwriting.ttf") format("truetype")
+
+@font-face
+  font-family: "Champignon"
+  src: url("fonts/Champignon.ttf") format("truetype")
+
+//Generic HTML Tag Styling
+body
+  margin: 0
+  padding: 0
+  overflow-x: hidden
+  background-color: rgb(220, 220, 220)
+
+header
+  position: fixed
+  top: 0
+  width: 100%
+  height: 10vh
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: baseline
+  background-color: rgba(10, 10, 10, 0.8)
+  color: rgb(230, 230, 230)
+  font-family: "Champignon"
+  font-size: 5.5em
+  padding-top: 0%
+  cursor: pointer
+  z-index: 50
+
+//Container for Content
+#body-container
+  margin-top: calc(10vh - .66vw)
+  width: 100vw
+  height: auto
+
+//Classes for album selectino
+.album
+  width: 49vw
+  height: 70vh
+  position: relative
+  float: left
+  margin-left: 0.5vw
+  margin-top: 0.66vw
+
+.album-img
+  width: 100%
+  height: 100%
+
+.album-text-container
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  cursor: pointer
+
+.album-text
+  font-size: 16em
+  font-family: "Handwriting"
+  cursor: pointer
