@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "Handwriting";
+  src: url("fonts/Jellyka_Estrya_Handwriting.ttf") format("truetype"); }
+
+body, html {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow-x: hidden; }
+
+body {
+  background-color: #141414;
+  width: 97.5vw; }
+  @media screen and (max-width: 1000px) {
+    body {
+      width: 100vw; } }
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 48%;
+  max-height: 90vh;
+  margin: 2vh auto 2vh auto; }
+  @media screen and (max-width: 1000px) {
+    img {
+      max-width: 90vw;
+      max-height: 90vh;
+      margin: 2vh auto 0.5vh auto; } }
+
+#home {
+  padding: 0vh 4vw 1vh 4vw;
+  font-family: "Handwriting", Arial;
+  font-size: 9em;
+  cursor: pointer;
+  top: 0vh;
+  left: -1vw;
+  position: absolute;
+  color: white;
+  z-index: 100; }
+  @media screen and (max-width: 1000px) {
+    #home {
+      font-size: 12em;
+      max-height: 10vh;
+      top: -2vh; } }
+  @media screen and (width: 1080px) and (height: 1920px) {
+    #home {
+      font-size: 15em;
+      top: -2vh; } }
+
+#home:hover {
+  -webkit-animation: home-anim 700ms forwards;
+  animation: home-anim 700ms forwards; }
+
+.nav-bar {
+  height: 22.5vh;
+  background-color: #2e2f30;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  text-align: center;
+  position: relative; }
+
+.nav-btn {
+  padding: 0vh 4vw 1vh 4vw;
+  font-family: "Handwriting", Arial;
+  font-size: 6em;
+  cursor: pointer;
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -0.2vh;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  color: rgba(170, 170, 170, 0.95);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  @media screen and (max-width: 1000px) {
+    .nav-btn {
+      font-size: 10em; } }
+  @media screen and (width: 1080px) and (height: 1920px) {
+    .nav-btn {
+      font-size: 10em; } }
+
+.bar {
+  width: 120%;
+  height: 0.3vh;
+  background-color: grey;
+  margin-top: -1.9vh;
+  margin-bottom: 0.2vh; }
+
+.nav-btn-animated {
+  color: white;
+  background-color: default; }
+
+.nav-btn-no-anim {
+  background-color: #e6e6e6; }
+
+.nav-btn:hover {
+  color: rgba(100, 100, 100, 0.95);
+  -webkit-animation: light 700ms forwards;
+  animation: light 700ms forwards; }
+
+.body-div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100vw; }
+
+.no-display {
+  display: none; }
+
+@media screen and (max-width: 801px) {
+  .large {
+    display: none; } }
+
+@media screen and (min-width: 802px) {
+  .small {
+    display: none; } }
+
+@-webkit-keyframes text-dark {
+  100% {
+    color: #1e1e1e; } }
+
+@keyframes text-dark {
+  100% {
+    color: #1e1e1e; } }
+
+@-webkit-keyframes home-anim {
+  100% {
+    color: #c8c8c8; } }
+
+@keyframes home-anim {
+  100% {
+    color: #c8c8c8; } }
+
+@-webkit-keyframes show-drop-menu {
+  100% {
+    opacity: 1; } }
+
+@keyframes show-drop-menu {
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes light {
+  0% {
+    background-color: default; }
+  100% {
+    background-color: #e6e6e6; } }
+
+@keyframes light {
+  0% {
+    background-color: default; }
+  100% {
+    background-color: #e6e6e6; } }
