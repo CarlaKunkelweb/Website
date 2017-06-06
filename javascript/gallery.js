@@ -64,3 +64,5 @@ function enlargeImage(img) {
     }
   }
 }
+
+//Album Animations

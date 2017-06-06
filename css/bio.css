@@ -34,19 +34,19 @@ body {
   background-repeat: no-repeat;
   width: 100vw;
   overflow-x: hidden;
-  font-size: 70%; }
+  font-size: 68%; }
   @media screen and (min-height: 800px) {
     body {
-      font-size: 85%; } }
+      font-size: 80%; } }
   @media screen and (min-height: 900px) {
     body {
       font-size: 100%; } }
   @media screen and (min-width: 360px) and (min-height: 640px) and (max-width: 400px) {
     body {
-      font-size: 80%; } }
+      font-size: 75%; } }
   @media screen and (min-width: 401px) and (max-width: 700px) {
     body {
-      font-size: 88%; } }
+      font-size: 80%; } }
   @media screen and (min-width: 701px) and (max-width: 999px) {
     body {
       font-size: 120%; } }
