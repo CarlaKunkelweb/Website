@@ -17,6 +17,9 @@ if($(window).width() > 1000) {
         "transform" : "translatex(0)",
         "animation" : "fade-in 1.5s forwards"
       })
+      $("#back-to-top-container").css({
+        "animation" : "fade-in 2s forwards"
+      })
     }
     if($(window).scrollTop() > ($("#img-3").offset().top*0.7)) {
       $("#img-3").css({
@@ -38,5 +41,17 @@ if($(window).width() > 1000) {
         "animation" : "fade-in 1.5s forwards"
       })
     }
+    if($(window).scrollTop() < ($("#img-1").offset().top-($("#img-1").height()/1.5))) {
+      $("#back-to-top-container").css({
+        "animation" : "fade-out 2s forwards"
+      })
+    }
   })
+}
+
+//SCroll To Top
+function scrollToTop() {
+  $('html,body').animate({
+    scrollTop : 0
+  }, 2000);
 }

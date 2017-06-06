@@ -20,6 +20,23 @@ body
   justify-content: center
   // @media screend and (max-width: )
 
+//Back to Top
+#back-to-top-container
+  opacity: 0
+  width: 4vw
+  height: 4vw
+  position: fixed
+  bottom: 2vh
+  right: 2vw
+  background-color: rgba(0, 0, 0, 0.7)
+  z-index: 1000
+  cursor: pointer
+
+#back-to-top
+  color: white
+  font-size: 2.9em
+  text-align: center
+  transform: rotate(270deg)
 
 //landing content
 #landing-img
@@ -49,6 +66,24 @@ body
   opacity: 0
   animation: fade-in 2.5s forwards
   animation-delay: 2s
+
+#scroll-ind-container
+  opacity: 0
+  width: 100vw
+  height: 5vh
+  padding-bottom: 5vh
+  position: absolute
+  bottom: 0
+  text-align: center
+  background-color: rgba(0, 0, 0, 0.5)
+  animation: fade-in-scroll 2s forwards
+  animation-delay: 6s
+
+#scroll-ind
+  transform: rotate(90deg)
+  color: white
+  font-size: 4em
+  cursor: default
 
 //nav-bar
 #nav-bar
@@ -256,6 +291,18 @@ body
     opacity: 0
   100%
     opacity: 1
+
+@keyframes fade-in-scroll
+  0%
+    opacity: 0
+  100%
+    opacity: 0.8
+
+@keyframes fade-out
+  0%
+    opacity: 1
+  100%
+    opacity: 0
 
 @keyframes translate-down
   0%
