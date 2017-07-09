@@ -15,15 +15,20 @@ body {
   margin: 0;
   overflow-x: hidden;
   width: 100vw;
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
@@ -52,17 +57,22 @@ body {
   background-image: url("../images/Landing/Duval-25.jpg");
   background-size: cover;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   margin-bottom: 2vw;
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
@@ -72,12 +82,16 @@ body {
       height: 70vw; } }
 
 #carla-title {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -151,12 +165,16 @@ body {
   margin-right: 1.5vw; }
 
 .section {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -169,6 +187,8 @@ body {
   padding: 0; }
   @media screen and (max-width: 1000px) {
     .section {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column; } }
@@ -189,15 +209,20 @@ body {
   position: relative;
   background-size: cover;
   background-position: center;
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -218,6 +243,8 @@ body {
   background-image: url("../images/Landing/cmk-crop.jpg");
   height: 100vh;
   width: 49vw;
+  -webkit-transition-duration: 1.5s;
+  -o-transition-duration: 1.5s;
   transition-duration: 1.5s; }
   @media screen and (max-width: 1000px) {
     #img-1 {
@@ -236,6 +263,8 @@ body {
   background-image: url("../images/Landing/Corkwood-11.jpg");
   width: 49vw;
   height: 100vh;
+  -webkit-transition-duration: 1.5s;
+  -o-transition-duration: 1.5s;
   transition-duration: 1.5s; }
   @media screen and (max-width: 1000px) {
     #img-2 {
@@ -255,6 +284,8 @@ body {
   width: 100vw;
   height: 100vh;
   margin: 3vh 0 3vh 0;
+  -webkit-transition-duration: 1.5s;
+  -o-transition-duration: 1.5s;
   transition-duration: 1.5s; }
   @media screen and (max-width: 1000px) {
     #img-3 {
@@ -272,6 +303,8 @@ body {
   background-image: url("../images/Corkwood/8.jpg");
   width: 49vw;
   height: 100vh;
+  -webkit-transition-duration: 1.5s;
+  -o-transition-duration: 1.5s;
   transition-duration: 1.5s; }
   @media screen and (max-width: 1000px) {
     #img-4 {
@@ -288,6 +321,8 @@ body {
   background-image: url("../images/profile-pic.jpg");
   width: 49vw;
   height: 100vh;
+  -webkit-transition-duration: 1.5s;
+  -o-transition-duration: 1.5s;
   transition-duration: 1.5s; }
   @media screen and (max-width: 1000px) {
     #img-5 {
