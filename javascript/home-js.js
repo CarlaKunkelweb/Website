@@ -12,7 +12,7 @@ if($(window).width() > 1000) {
     "display" : "block"
   })
 
-  $(window).scroll( () => {
+  $(window).scroll( function() {
     if($(window).scrollTop() > ($("#img-1").offset().top-($("#img-1").height()/1.5))) {
       $("#img-1").css({
         "transform" : "translatex(0)",
