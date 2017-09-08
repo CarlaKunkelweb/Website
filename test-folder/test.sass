@@ -1,0 +1,83 @@
+//Fonts
+@font-face
+  font-family: "Handwriting"
+  src: url("fonts/Jellyka_Estrya_Handwriting.ttf") format("truetype")
+
+@font-face
+  font-family: "Champignon"
+  src: url("../css/fonts/Champignon.ttf") format("truetype")
+
+body
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  margin: 0
+  padding: 0
+  width: 100vw
+  height: 100vh
+
+//Logo
+#logo
+  position: fixed
+  right: 0
+  top: 0
+  width: auto
+  padding-right: 5%
+  padding-left: 5%
+  font-size: 5em
+  overflow: hidden
+  font-family: "Champignon"
+  cursor: pointer
+
+//Carousel
+//Container styling
+#carousel-container
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 100vw
+  height: 100vh
+
+//Main image styling
+#main-carousel-image-container
+  width: 100vw
+  height: 85vh
+  margin-top: 5vh
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  overflow: hidden
+
+.main-carousel-image
+  width: 100%
+  height: auto
+  cursor: pointer
+
+//Carousel-scrollbar
+#carousel-scrollbar-container
+  width: 30vw
+  height: 5%
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+
+.carousel-position-component-container
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 15vw
+  height: 60%
+  margin-left: 1vw
+  border-radius: 100vh
+  cursor: pointer
+
+.carousel-position-component
+  width: 80%
+  height: 10%
+  border-radius: 100vh
+  background-color: rgba(150, 150, 150, 0.8)
