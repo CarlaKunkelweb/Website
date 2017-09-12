@@ -55,10 +55,22 @@ body
   justify-content: center
   overflow: hidden
 
-.main-carousel-image
-  width: 100%
-  height: auto
+.carousel-image
+  width: 100vw
+  height: 100vh
   cursor: pointer
+  background-size: cover
+  background-position: center
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+#main-carousel-image
+
+#second-carousel-image
+  transform: translatex(100%)
+  opacity: 0
 
 //Carousel-scrollbar
 #carousel-scrollbar-container
@@ -105,3 +117,38 @@ body
     transform: translatex(-100%)
   100%
     transform: translatex(0%)
+
+@keyframes main-image-anim-1
+  0%
+  100%
+
+
+@keyframes main-image-anim-2
+  0%
+  100%
+
+@keyframes second-image-anim-1
+  0%
+    transform: translatex(100%)
+    opacity: 0
+  25%
+    transform: translatex(100%)
+    opacity: 0
+  70%
+    opacity: 1
+  100%
+    transform: translatex(0)
+    opacity: 1
+
+@keyframes second-image-anim-2
+  0%
+    transform: translatex(100%)
+    opacity: 0
+  25%
+    transform: translatex(100%)
+    opacity: 0
+  70%
+    opacity: 1
+  100%
+    transform: translatex(0)
+    opacity: 1

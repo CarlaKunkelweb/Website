@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <title>test-gallery</title>
     <link rel="stylesheet" type="text/css" href="test.css">
+    <!-- Preloading images for album carousel-->
+    <link rel="preload" href="../images/Corkwood/1-m.jpg">
+    <link rel="preload" href="../images/Duval/1-m.jpg">
+    <link rel="preload" href="../images/Money/1-m.jpg">
+    <link rel="preload" href="../images/Extra/1-m.jpg">
   </head>
   <body>
     <div id="logo" onclick="openHome()">
@@ -14,8 +19,11 @@
     <div id="carousel-container">
 
       <!-- Main image at center of carousel -->
-      <div id="main-carousel-image-container">
-        <img class="main-carousel-image" src="../images/Corkwood/1.jpg">
+      <div id="main-carousel-image-container" onclick="imageClick()">
+        <div id="main-carousel-image" class="carousel-image">
+          <div id="second-carousel-image" class="carousel-image">
+          </div>
+        </div>
       </div>
 
       <!-- scrollbar for different albums -->
