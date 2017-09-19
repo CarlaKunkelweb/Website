@@ -2,12 +2,13 @@ function openHome() {
   window.open("index.html", "_self")
 }
 
-let state = {
+var state = {
   scrollAnimated: false,
   scrollTimeout: null,
   imagesAnimated: false,
   imagesTimout: null,
-
+  currentImage: null,
+  albumLink: null
 }
 
 
@@ -15,7 +16,7 @@ let state = {
 function animateScrollbar(passedCount) {
 
   //Initiating the count variable, if the function has been called recursievely, then the value that was passed is then assigned to count
-  let count = 0
+  var count = 0
   if(passedCount) {
     count = passedCount
   }
@@ -55,14 +56,18 @@ function animateScrollbar(passedCount) {
 function animateImages(passedCount) {
 
   //Variable calling, see animateScrollbar for description of code mechanics
-  let count = 0
+  var count = 0
   if(passedCount) {
     count = passedCount
   }
 
   //Sources for images for main-carousel-image-container
-  let imageSource = [
+  var imageSource = [
     '../images/Corkwood/1-m.jpg', '../images/Duval/1-m.jpg', '../images/Money/1-m.jpg', '../images/Extra/1-m.jpg'
+  ]
+
+  var albumLink = [
+    'Corkwood.html','Duval.html', 'Money.html', 'Exra.html'
   ]
 
 
@@ -108,6 +113,13 @@ function animateImages(passedCount) {
     })
   }
 
+
+  //Setting the image source for state
+  state.currentImage = imageSource[count]
+
+  //Setting the album link for state
+  state.albumLink = albumLink[count]
+
   //Increasing count if it is not the last, if it is then resetting the count
   if(count === 3) {
     count = 0
@@ -126,6 +138,8 @@ function animateImages(passedCount) {
 //Function to handle click of scrollbar
 function imageClick() {
   clearTimeout(state.imagesTimeout)
+  clearTimeout(state.scrollbarTimeout)
+  window.open(state.albumLink)
 }
 
 
